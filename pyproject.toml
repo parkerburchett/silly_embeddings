@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "silly-embeddings"
+version = "0.1.0"
+description = ""
+authors = ["Parker Burchett <parkerburchett@gmail.com>"]
+readme = "README.md"
+packages = [{include = "silly_embeddings"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyter = "^1.0.0"
+pandas = "^1.5.3"
+polars = "^0.16.10"
+plotly = "^5.13.1"
+seaborn = "^0.12.2"
+fastparquet = "^2023.2.0"
+sentence-transformers = "^2.2.2"
+black = {extras = ["jupyter"], version = "^23.1.0"}
+tqdm = "^4.65.0"
+python-dotenv = "^1.0.0"
+transformers = "^4.26.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
